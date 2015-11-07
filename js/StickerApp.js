@@ -1,46 +1,69 @@
-window.onload = function(){
-if(window.File && window.FileList && window.FileReader)
-    {
-        var filesInput = document.getElementById("files");
+var myapp = myapp || {};
 
-        filesInput.addEventListener("change", function(event){
+myapp.StickerApp = (function (){
 
+    return function(config) {
+        var photo = localStorage.getItem('main-photo') || '';
+        var config = {fileInputId:'files',outputImageId:'result',resetButtonId:'startOver'};
+        var picReader = new FileReader();
+
+        this.uploadMainPhoto = function(event){
             var files = event.target.files; //FileList object
-            var output = document.getElementById("result");
+            var i = 0; var file = files[i];
+            //Only image files
+            if(!file.type.match('image')){
+              alert('Invalid image file.');
+              return;
+            }
+            picReader.readAsDataURL(file);
+        };
 
-            var i = 0;
+        this.loadPhoto = function(event){
+            var picFile = event.target;
+            var div = document.createElement("div");
+            div.innerHTML = "<img class='thumbnail' src='" + picFile.result + "'" +
+                    "title='" + picFile.name + "'/>";
+            var output = document.getElementById(config.outputImageId);
+            output.insertBefore(div,null);
+            $('#'+config.fileInputId).hide();
+            if($('#'+config.resetButtonId)!=null){
+                $('#'+config.resetButtonId).show();
+            }
+        };
 
-                var file = files[i];
+        this.resetPhoto = function(){
+            $('#'+config.outputImageId).html('');
+            $('#'+config.fileInputId).show();
+        };
 
-                //Only pics
-                if(!file.type.match('image')){
-                  alert('error');
-                  return;
-                }
+        this.initEventHandlers = function(){
 
-                var picReader = new FileReader();
+            if(window.File && window.FileList && window.FileReader) {
+                    var filesInput = document.getElementById(config.fileInputId);
+                    filesInput.addEventListener("change", this.uploadMainPhoto);
+                    picReader.addEventListener("load",this.loadPhoto);
 
-                picReader.addEventListener("load",function(event){
+            } else {
+                alert("Your browser does not support File API");
+            }
 
-                    var picFile = event.target;
+            if(document.getElementById(config.resetButtonId)!=null){
+                document.getElementById(config.resetButtonId).addEventListener("click", this.resetPhoto);
+            }
+        };
 
-                    var div = document.createElement("div");
+        window.onload = this.initEventHandlers();
 
-                    div.innerHTML = "<img class='thumbnail' src='" + picFile.result + "'" +
-                            "title='" + picFile.name + "'/>";
-
-                    output.insertBefore(div,null);
-
-                });
-
-                 //Read the image
-                picReader.readAsDataURL(file);
-
-
-        });
     }
-    else
-    {
-        console.log("Your browser does not support File API");
-    }
-}
+
+})();
+
+$(document).ready(function(){
+
+    var stickerApp = new myapp.StickerApp({
+        fileInputId: 'files',
+        outputImageId: 'result',
+        resetButtonId: 'startOver'
+    });
+
+});
