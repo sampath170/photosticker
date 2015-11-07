@@ -33,8 +33,35 @@
                     </div>
 				</div>
 				<div class="sticker-panel">
-				</div>
+                    <button id="uploadSticker" type="button" class="btn btn-info btn-lg upload-sticker" data-toggle="modal" data-target="#myModal" style="width:100%">Upload new Sticker</button>
+
+                 </div>
 			</div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Upload a new sticker image</h4>
+                        </div>
+                        <div class="modal-body">
+                            <input id="stickerFiles" type="file" multiple/>
+                            <br>
+                            <span>Sticker title:</span><input id="stickerTitle" type="text" size="30" style="margin-left:10px"/>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-info btn-lg upload-sticker" data-dismiss="modal">Submit</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
 		</div>
 	</div>
 </div>
@@ -43,6 +70,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
 
+    <script src="js/PhotoPanel.js"/></script>
+    <script src="js/StickerPanel.js"/></script>
     <script src="js/StickerApp.js"/></script>
 
   </body>
