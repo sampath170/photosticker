@@ -23,9 +23,15 @@
 				PhotoSticker
 			</h2>
 			<div class="row">
-				<div class="col-md-9">
+				<div class="col-md-9 photo-panel">
+                    <div class="photo-content">
+                        <output class="output-image" id="result" />
+                    </div>
+                    <div class="photo-no-content">
+                        <input id="files" type="file" multiple/>
+                    </div>
 				</div>
-				<div class="col-md-3">
+				<div class="sticker-panel">
 				</div>
 			</div>
 		</div>
@@ -35,5 +41,8 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+
+    <script src="js/StickerApp.js"/></script>
+
   </body>
 </html>
