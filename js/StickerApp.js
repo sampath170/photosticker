@@ -1,18 +1,34 @@
 var myapp = myapp || {};
 
+function initStickerApp(){
+    myapp.StickerApp = (function(){
 
-$(document).ready(function(){
+            return function(){
 
-    var photoPanel = new myapp.PhotoPanel({
-        fileInputId: 'files',
-        outputImageId: 'result',
-        resetButtonId: 'startOver'
-    });
+                //create PhotoPanel
+                var photoPanel = new myapp.PhotoPanel({
+                        fileInputId: 'files',
+                        outputImageId: 'result',
+                        resetButtonId: 'startOver'
+                    });
 
-    var stickerPanel = new myapp.StickerPanel({
-            fileInputId: 'stickerFiles',
-            outputImageId: 'stickerResult',
-            stickerUploadId: 'uploadSticker'
-        });
+                //create StickerPanel
+                var stickerPanel = new myapp.StickerPanel({
+                    fileInputId: 'stickerFiles',
+                    outputImageId: 'stickerResult',
+                    stickerUploadId: 'uploadSticker',
+                    stickerSubmitId: 'stickerSubmit',
+                    panelContainerClass:'sticker-panel'
+                });
 
-});
+
+
+
+            };
+
+        })();
+
+    var stickerApp = new myapp.StickerApp();
+}
+
+$(document).ready(initStickerApp);

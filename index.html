@@ -24,7 +24,7 @@
 			</h2>
 			<div class="row">
 				<div class="col-md-9 photo-panel">
-                    <div class="photo-content">
+                    <div class="photo-content droppable" id="drop-here">
                         <button id="startOver" type="button" class="btn btn-default navbar-btn" style="display:none">Start Over</button>
                         <output class="output-image" id="result" />
                     </div>
@@ -54,7 +54,7 @@
                             <span>Sticker title:</span><input id="stickerTitle" type="text" size="30" style="margin-left:10px"/>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-info btn-lg upload-sticker" data-dismiss="modal">Submit</button>
+                            <button type="button" class="btn btn-info btn-lg upload-sticker" data-dismiss="modal" id="stickerSubmit">Submit</button>
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
