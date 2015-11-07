@@ -49,9 +49,19 @@ myapp.StickerPanel = (function (){
               $('.panelContainerClass').append(document.getElementById(data));
               document.getElementById('drop-here').appendChild(document.getElementById(data));
               document.getElementById(data).draggable = "";
-                document.getElementById(data).style.position = 'absolute';
-                document.getElementById(data).style.left = evt.x+'px';
-                document.getElementById(data).style.top = evt.y+'px';
+              document.getElementById(data).style.position = 'absolute';
+              document.getElementById(data).style.left = evt.x+'px';
+              document.getElementById(data).style.top = evt.y+'px';
+
+              var div = document.createElement("div");
+              div.style.id = 'drag1';
+              div.innerHTML = "<img style='width:130px;height:130px' draggable='true' id='drag1' class='thumbnailx' src='" + stickerSrc.result + "'" +
+                       "/>";
+              var output = document.createElement('output');
+              output.className = 'output-thumbnail';
+
+              output.insertBefore(div,null);
+              $('.'+config.panelContainerClass).append(div);
             };
 
             document.body.ondragover = function(evt) {
