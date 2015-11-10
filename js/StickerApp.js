@@ -9,7 +9,8 @@ function initStickerApp(){
                 var photoPanel = new myapp.PhotoPanel({
                         fileInputId: 'files',
                         outputImageId: 'result',
-                        resetButtonId: 'startOver'
+                        resetButtonId: 'startOver',
+                        dropPanelId:'drop-here'
                     });
 
                 //create StickerPanel

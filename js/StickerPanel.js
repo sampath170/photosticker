@@ -24,27 +24,33 @@ myapp.StickerPanel = (function (){
         };
 
         this.setUpDragNDrop = function() {
-            var drag1 = document.getElementById('drag1');
+            var draggableElements = $('.thumbnailx');
+
+            for(var i=0; i<draggableElements.length; i++){
+
+                draggableElements[i].ondragstart = function(evt) {
+                    if($('#dragged-id') != null) //reset ID of all existing elements
+                        $($('#dragged-id')[0]).attr('id','');
+                    for(var i=0; i<draggableElements.length; i++){
+                      draggableElements[i].setAttribute('id','')
+                    }
+                    $(evt.target).attr('id','dragged-elem');
+                    evt.dataTransfer.setData("dragged-id", evt.target.id);
+                };
+
+                draggableElements[i].ondblclick = function(evt) {
+                  evt.preventDefault();
+                  draggableElements[i].draggable = "true";
+                };
+            }
             var drop1 = document.getElementById('drop-here');
-
-            drag1.ondragstart = function(evt) {
-              //console.log("Starting to drag 'drag1'");
-              evt.dataTransfer.setData("dragged-id", evt.target.id);
-            };
-
-            drag1.ondblclick = function(evt) {
-              evt.preventDefault();
-              drag1.draggable = "true";
-            };
 
             drop1.ondragover = function(evt) {
               evt.preventDefault();
-              //console.log("Dragging over 'drop-here'");
             };
 
             drop1.ondrop = function(evt) {
               evt.preventDefault();
-              //console.log("Dropping on 'drop-here'");
               var data = evt.dataTransfer.getData("dragged-id");
               $('.panelContainerClass').append(document.getElementById(data));
               document.getElementById('drop-here').appendChild(document.getElementById(data));
@@ -54,8 +60,8 @@ myapp.StickerPanel = (function (){
               document.getElementById(data).style.top = evt.y+'px';
 
               var div = document.createElement("div");
-              div.style.id = 'drag1';
-              div.innerHTML = "<img style='width:130px;height:130px' draggable='true' id='drag1' class='thumbnailx' src='" + stickerSrc.result + "'" +
+              div.style.className = 'drag1';
+              div.innerHTML = "<img style='width:130px;height:130px' draggable='true' class='drag1' class='thumbnailx' src='" + stickerSrc.result + "'" +
                        "/>";
               var output = document.createElement('output');
               output.className = 'output-thumbnail';
@@ -63,15 +69,6 @@ myapp.StickerPanel = (function (){
               output.insertBefore(div,null);
               $('.'+config.panelContainerClass).append(div);
             };
-
-            document.body.ondragover = function(evt) {
-                //document.getElementById('id-x').innerHTML = "X:&nbsp;" + evt.x;
-                //document.getElementById('id-y').innerHTML = "Y:&nbsp;" + evt.y;
-            };
-
-
-
-
         };
 
         this.addSticker = function(){

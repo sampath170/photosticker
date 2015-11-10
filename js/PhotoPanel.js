@@ -4,7 +4,7 @@ myapp.PhotoPanel = (function (){
 
     return function(config) {
         var photo = localStorage.getItem('main-photo') || '';
-        var config = {fileInputId:'files',outputImageId:'result',resetButtonId:'startOver'};
+        var config = {fileInputId:'files',outputImageId:'result',resetButtonId:'startOver',dropPanelId:'drop-here'};
         var picReader = new FileReader();
 
         this.uploadMainPhoto = function(event){
@@ -33,7 +33,8 @@ myapp.PhotoPanel = (function (){
 
         this.resetPhoto = function(){
             $('#'+config.outputImageId).html('');
-            $('#'+config.fileInputId).show();
+            $('#'+config.outputImageId).html('');
+            $('#'+config.dropPanelId).html('');
         };
 
         this.initEventHandlers = function(){

@@ -67,7 +67,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="70" selection-start="830" selection-end="839" vertical-scroll-proportion="0.0" vertical-offset="203" max-vertical-offset="1260">
+            <state line="22" column="19" selection-start="690" selection-end="690" vertical-scroll-proportion="-5.2916665" vertical-offset="203" max-vertical-offset="1260">
               <folding />
             </state>
           </provider>
@@ -76,7 +76,7 @@
       <file leaf-file-name="StickerApp.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/StickerApp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="600">
+            <state line="12" column="47" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
               <folding />
             </state>
           </provider>
@@ -85,7 +85,7 @@
       <file leaf-file-name="PhotoPanel.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/PhotoPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="334" max-vertical-offset="960">
+            <state line="6" column="114" selection-start="243" selection-end="266" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="975">
               <folding />
             </state>
           </provider>
@@ -94,7 +94,7 @@
       <file leaf-file-name="StickerPanel.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/StickerPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="14" selection-start="2575" selection-end="2575" vertical-scroll-proportion="0.8195122" vertical-offset="441" max-vertical-offset="1755">
+            <state line="69" column="60" selection-start="2967" selection-end="2967" vertical-scroll-proportion="0.872449" vertical-offset="522" max-vertical-offset="1710">
               <folding />
             </state>
           </provider>
@@ -120,18 +120,18 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/js/PhotoPanel.js" />
-        <option value="$PROJECT_DIR$/js/StickerApp.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/StickerPanel.js" />
+        <option value="$PROJECT_DIR$/js/PhotoPanel.js" />
+        <option value="$PROJECT_DIR$/js/StickerApp.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1303" />
-    <option name="height" value="744" />
+    <option name="x" value="64" />
+    <option name="y" value="-4" />
+    <option name="width" value="1305" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -159,8 +159,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -171,6 +169,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -184,6 +184,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="SearchEverywhereHistory" value="" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
@@ -329,7 +330,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1303" height="744" extended-state="6" />
+    <frame x="64" y="-4" width="1305" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -375,14 +376,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="70" selection-start="830" selection-end="839" vertical-scroll-proportion="0.0" vertical-offset="203" max-vertical-offset="1260">
+        <state line="22" column="19" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0" vertical-offset="203" max-vertical-offset="1260">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/StickerApp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+        <state line="23" column="0" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="600">
           <folding />
         </state>
       </provider>
@@ -394,6 +395,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/StickerPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="18" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1650">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="16" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="70" selection-start="830" selection-end="839" vertical-scroll-proportion="0.0" vertical-offset="203" max-vertical-offset="1260">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/StickerApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/PhotoPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="334" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/StickerPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="14" selection-start="2575" selection-end="2575" vertical-scroll-proportion="0.0" vertical-offset="441" max-vertical-offset="1755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="16" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="16" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
@@ -401,9 +451,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/StickerApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="47" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/PhotoPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="114" selection-start="243" selection-end="266" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="19" selection-start="690" selection-end="690" vertical-scroll-proportion="-5.2916665" vertical-offset="203" max-vertical-offset="1260">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/StickerPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="14" selection-start="2575" selection-end="2575" vertical-scroll-proportion="0.8195122" vertical-offset="441" max-vertical-offset="1755">
+        <state line="69" column="60" selection-start="2967" selection-end="2967" vertical-scroll-proportion="0.872449" vertical-offset="522" max-vertical-offset="1710">
           <folding />
         </state>
       </provider>
