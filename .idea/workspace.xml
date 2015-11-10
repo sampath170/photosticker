@@ -85,7 +85,7 @@
       <file leaf-file-name="PhotoPanel.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/PhotoPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="114" selection-start="243" selection-end="266" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="975">
+            <state line="34" column="49" selection-start="1301" selection-end="1301" vertical-scroll-proportion="-9.62963" vertical-offset="250" max-vertical-offset="960">
               <folding />
             </state>
           </provider>
@@ -94,7 +94,7 @@
       <file leaf-file-name="StickerPanel.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/StickerPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="60" selection-start="2967" selection-end="2967" vertical-scroll-proportion="0.872449" vertical-offset="522" max-vertical-offset="1710">
+            <state line="68" column="16" selection-start="2840" selection-end="2840" vertical-scroll-proportion="-0.14795919" vertical-offset="1107" max-vertical-offset="1695">
               <folding />
             </state>
           </provider>
@@ -121,9 +121,9 @@
       <list>
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/StickerPanel.js" />
-        <option value="$PROJECT_DIR$/js/PhotoPanel.js" />
         <option value="$PROJECT_DIR$/js/StickerApp.js" />
+        <option value="$PROJECT_DIR$/js/PhotoPanel.js" />
+        <option value="$PROJECT_DIR$/js/StickerPanel.js" />
       </list>
     </option>
   </component>
@@ -458,13 +458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/PhotoPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="114" selection-start="243" selection-end="266" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="975">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="19" selection-start="690" selection-end="690" vertical-scroll-proportion="-5.2916665" vertical-offset="203" max-vertical-offset="1260">
@@ -472,9 +465,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/PhotoPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="49" selection-start="1301" selection-end="1301" vertical-scroll-proportion="-9.62963" vertical-offset="250" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/StickerPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="60" selection-start="2967" selection-end="2967" vertical-scroll-proportion="0.872449" vertical-offset="522" max-vertical-offset="1710">
+        <state line="68" column="16" selection-start="2840" selection-end="2840" vertical-scroll-proportion="-0.14795919" vertical-offset="1107" max-vertical-offset="1695">
           <folding />
         </state>
       </provider>

@@ -53,21 +53,20 @@ myapp.StickerPanel = (function (){
               evt.preventDefault();
               var data = evt.dataTransfer.getData("dragged-id");
               $('.panelContainerClass').append(document.getElementById(data));
-              document.getElementById('drop-here').appendChild(document.getElementById(data));
-              document.getElementById(data).draggable = "";
-              document.getElementById(data).style.position = 'absolute';
-              document.getElementById(data).style.left = evt.x+'px';
-              document.getElementById(data).style.top = evt.y+'px';
+              //document.getElementById('drop-here').appendChild(document.getElementById(data));
+              //document.getElementById(data).draggable = "";
+              //document.getElementById(data).style.position = 'absolute';
+              //document.getElementById(data).style.left = evt.x+'px';
+              //document.getElementById(data).style.top = evt.y+'px';
 
-              var div = document.createElement("div");
-              div.style.className = 'drag1';
-              div.innerHTML = "<img style='width:130px;height:130px' draggable='true' class='drag1' class='thumbnailx' src='" + stickerSrc.result + "'" +
-                       "/>";
-              var output = document.createElement('output');
-              output.className = 'output-thumbnail';
+              var dropElem = document.createElement('img');
+              dropElem.setAttribute('src',$('#'+data).attr('src'));
+              dropElem.style.position = 'absolute';
+              dropElem.style.left = evt.x+'px';
+              dropElem.style.top = evt.y+'px';
+              document.getElementById('drop-here').appendChild(dropElem);
 
-              output.insertBefore(div,null);
-              $('.'+config.panelContainerClass).append(div);
+              //$('.'+config.panelContainerClass).append($(document.getElementById(data)));
             };
         };
 
